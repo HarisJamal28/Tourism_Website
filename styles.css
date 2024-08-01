@@ -644,13 +644,13 @@ footer ul li a:hover {
     flex-direction: column;
   }
   .ContactFrame .ContactForm aside img {
-    height: 300px;
+    height: 350px;
+    -o-object-position: top center;
+       object-position: top center;
   }
   .ContactFrame .ContactForm aside form {
-    width: 74%;
-  }
-  .ContactFrame .ContactForm aside form br {
-    display: none;
+    flex-direction: column;
+    width: 60%;
   }
   .ContactFrame .ContactForm aside form label {
     font-size: 0.4rem;
@@ -663,6 +663,7 @@ footer ul li a:hover {
   .ContactFrame .ContactForm aside form textarea {
     height: 30px;
     width: 90%;
+    margin: 0;
     border: 0px;
   }
   .ContactFrame .ContactForm aside form div {
