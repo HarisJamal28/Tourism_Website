@@ -1,0 +1,803 @@
+$colormain: rgb(37, 168, 37);
+$limit: 50px;
+
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    img{
+        image-rendering: optimizeSpeed;
+    }
+}
+
+header{
+    height: 50vh;
+    background-image: url(./images/banner1.jpg);
+    background-size: cover;
+    background-position: center 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    h1{
+        font-size: 8rem;
+        animation: slide_in 1s;
+        color: white;
+    }
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 168, 37);
+    padding: 0.5rem;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+        li{
+            a{
+                text-decoration: none;
+                color: white;
+
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+.StarterFrame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+
+    aside{
+        width: 100%;
+        height: 100%;
+    }
+    .ProvinceFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        // border: 1px solid black;
+
+        .Holder{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            overflow: hidden;
+            div{
+                height: 300px;
+                width: 100%;
+                &:nth-child(odd){
+                    animation: emphasisleft 1s;
+                }
+                &:nth-child(even){
+                    animation: emphasisright 1s;
+                }
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .TextFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+        border-left: 1px solid black;
+    .Text_Holder{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        animation: ShowupL linear;
+        animation-timeline: view(); 
+        animation-range: 10px 36%;
+        h1{
+            font-size: 2.2rem;
+            margin: 0;
+            width: 50%;
+            padding: 10px;
+            background-color: $colormain;
+            text-align: center;
+            color: white;
+        }
+        p{
+            width: 70%;
+            text-align: justify;
+
+            span{
+                background-color: $colormain;
+                padding: 10px;
+                color: white;
+            }
+        }
+    }
+    }
+}
+
+.StarterFrame2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 100vh;
+
+    aside{
+        width: 100%;
+        height: 100%;
+    }
+    .ProvinceFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+        // border: 1px solid black;
+
+        .Holder{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            overflow: hidden;
+            div{
+                height: 300px;
+                width: 100%;
+                &:nth-child(odd){
+                    animation: emphasisleft 1s;
+                }
+                &:nth-child(even){
+                    animation: emphasisright 1s;
+                }
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .TextFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+        border-left: 0px solid black;
+        border-right: 1px solid black;
+    .Text_Holder{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        animation: ShowupR linear;
+        animation-timeline: view();
+        animation-range: 10px 36%;
+        h1{
+            font-size: 2.2rem;
+            margin: 0;
+            width: 50%;
+            padding: 10px;
+            background-color: $colormain;
+            text-align: center;
+            color: white;
+        }
+        p{
+            width: 70%;
+            text-align: justify;
+
+            span{
+                background-color: $colormain;
+                padding: 10px;
+                color: white;
+            }
+        }
+    }
+    }
+}
+
+
+
+
+.AboutFrame{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 85vh;
+    .StaffFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+        
+        // border: 1px solid black;
+        div{
+            height: 400px;
+            width: 500px;
+            position: relative;
+            h1{
+                position: absolute;
+                bottom: -30px;
+                left: 0;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                background-color: $colormain;
+                padding-top: 10px;
+                padding-bottom: 15px;
+                color: white;
+                font-size: 1.5rem;
+            }
+            p{  
+                margin-top: 0;
+                padding-top: 0;
+                border-left: 1px solid black;
+                border-right: 1px solid black;
+                border-bottom: 1px solid black;
+                padding: 10px;
+            }
+            img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .MissionFrame{
+        width: 40%;
+        padding: 30px;
+        z-index: 1;
+        background-color: white;
+        padding-top: 5px;
+        p{
+            font-size: 1.1rem;
+        }
+    }
+}
+
+.ContactFrame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: row;
+    .ContactForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $colormain;
+        height: fit-content;
+        width: 50%;
+    box-shadow: 0px 10px 10px black;
+        aside{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            form{
+                height: 100%;
+                width: 80%;
+                label{
+                    color: white;
+                }
+                textarea{
+                    width: 93%;
+                    resize: none;
+                    height: 100px;
+                }
+        input{
+            margin-top: 5px;
+            margin-bottom: 20px;
+            width: 90%;
+            border: 0px;
+            padding: 5px;
+        }
+        div{
+            width: 90%;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+            button{
+                border: 0px;
+                padding: 10px;
+                background-color: white;
+                color: $colormain;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+        }                
+            }
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        }
+    }
+}
+.TravelFrame{
+    height: 100vh;
+    overflow: scroll;
+    .StoriesFrame{
+        height: 100%;
+        padding: 20px;
+        .Locations{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            height: 100%;
+            .Provinces{
+                width: 400px;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow-x: hidden;
+                ul{
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    gap: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px;
+                    overflow-y: scroll;
+                    li{
+                        background-color: white;
+                        text-align: center;
+                        font-size: 1.5rem;
+                        padding: 20px;
+                        animation: ShowupR 1s;
+                        background-color: $colormain;
+                        color: white;
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+            .Locales{
+                width: 100%;
+                height: 100%;
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                gap: 20px;
+                overflow-y: scroll;
+                animation: ShowupL 1s;
+                img{
+                    height: 200px;
+                    width: 350px;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+.StoryFrame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .SFrame{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow-y: scroll;
+        position: relative;
+        .Stories{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            height: fit-content;
+            position: relative;
+        gap: 30px;
+        padding: 20px;  
+
+            .card{
+                height: 450px;
+                width: 300px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                box-shadow: 0px 1px 4px;
+                overflow-y: scroll;
+                .image{
+                    width: 100%;
+                    height: 250px;
+                img{
+                    height: 250px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+                }
+                .name{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 120px;
+                    width: 100%;
+                    background-color: $colormain;
+                    text-align: center;
+                    color: white;
+                }
+                .desc{
+                    height: 500px;
+                    width: 100%;
+                    overflow-y: scroll;
+                    p{
+                        padding: 10px;
+                        padding-top: 0;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@keyframes slide_in {
+    0%{
+        transform: translateY(1000px);
+    }
+    50%{
+        transform: translateY(500px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes enlarge {
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes emphasisleft {
+    from{
+        transform: translateX(-1000px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+@keyframes emphasisright {
+    from{
+        transform: translateX(1000px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+@keyframes StylingImage1{
+    from{
+        transform: translateY(0);
+    }to{
+        transform: translateY(100px);
+    }
+}
+
+@keyframes ShowupR {
+    from{
+        transform: translateX(-1000px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+@keyframes Style1 {
+    from{
+        transform: translateY(0px);
+    }to{
+        transform: translateY(200px);
+    }
+}
+@keyframes ShowupL {
+    from{
+        transform: translateX(1500px);
+    }to{
+        transform: translateX(0px);
+    }
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(37, 168, 37);
+    padding: 0.5rem;
+    ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 1rem;
+        li{
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: black;
+                }
+            }
+        }
+    }
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+
+@media screen and (max-width:450px) {
+    header{
+        height: 10vh;
+        h1{
+            font-size: 2rem;
+        }
+    }
+    
+    nav{
+        font-size: 0.4rem;
+    }
+    .StarterFrame{
+        padding: 10px;
+        flex-direction: column;
+        height: fit-content;
+        gap: 10px;
+        .ProvinceFrame{
+            .Holder{
+                // border: 5px solid yellow;
+                div{
+                    height: 100px;
+                }
+            }
+        }
+        .TextFrame{
+            border-left: 0px;
+            .Text_Holder{
+                animation: ShowupL 2s ease 1;
+                animation-delay: 0s;
+
+                h1{
+                    font-size: 0.6rem;
+                }
+                p{
+                    font-size: 0.4rem;
+                    padding: 5px;
+                    span{
+                        padding: 4px;
+                        font-size: 0.5rem;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .StarterFrame2{
+        padding: 10px;
+        height: fit-content;
+        flex-direction: column-reverse;
+        gap: 10px;
+        .ProvinceFrame{
+            .Holder{
+                div{
+                    height: 100px;
+                }
+            }
+        }
+        .TextFrame{
+            border-right: 0px;
+            .Text_Holder{
+                // border: 5px solid yellow;
+                animation: ShowupL linear;
+                animation-timeline: view();
+                animation-range: 10px 20%;
+                
+                h1{
+                    font-size: 0.6rem;
+                }
+                p{
+                    font-size: 0.4rem;
+                    padding: 5px;
+                    span{
+                        padding: 4px;
+                        font-size: 0.5rem;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .AboutFrame{
+        
+        .StaffFrame{
+            div{
+                height: 100px;
+                width: 200px;
+                h1{ 
+                    bottom: -8px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    font-size: 0.4rem;
+                }
+            }
+        }
+        .MissionFrame{
+            box-shadow: 0px 5px 5px black;
+            padding: 10px;
+            p{
+                font-size: 0.4rem;
+            }
+        }
+    }
+
+    .ContactFrame{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 100vh;
+        // border: 5px solid red;
+
+        .ContactForm{
+            margin-top: 20px;
+            // border: 5px solid red;
+            height: fit-content;
+            width: 90%;
+            flex-direction: column;
+        // box-shadow: 0px 0px 0px;
+            aside{
+                img{
+                    height: 300px;
+                }
+                form{
+                    width: 74%;
+                    br{
+                        display: none;
+                    }
+                    label{
+                        font-size: 0.4rem;
+                        margin: 0;
+                    }
+                    input{
+                        // height: 5px;
+                        padding: 0px;
+                        margin: 0;
+                    }
+                    textarea{
+                        height: 30px;
+                        width: 90%;
+
+                        border: 0px;
+                    }
+                    div{
+                        justify-content: center;
+                        align-items: center;
+                        padding: 5px;
+                    button{
+                        font-size: 0.4rem;
+                        padding: 5px;
+                        margin: 0;
+                        
+                    }
+                    }
+                }
+            }
+        }
+    }
+
+    .TravelFrame{
+        .StoriesFrame{
+            height: fit-content;
+            .Locations{
+                gap: 20px;
+            flex-direction: column;
+            // border: 5px solid yellow;
+                .Provinces{
+                    flex-direction: column;
+                    justify-content: start;
+                    align-items: center;
+                    height: fit-content;
+                    width: fit-content;
+                    ul{
+                        overflow-x: scroll;
+                        flex-direction: row;
+                        padding: 0;
+                        gap: 5px;
+                        width: 100%;
+                        li{ 
+                            // border: 1px solid yellow;
+                            font-size: 0.5rem;
+                            height: fit-content;
+                            padding: 5px;
+                        }
+                    }
+                }
+                .Locales{
+                    display: flex;
+                    flex-wrap: wrap;
+
+                    width: 100%;
+                    img{
+                        height: 100px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .StoryFrame{
+        height: 100vh;
+        .SFrame{
+            height: 95%;
+            margin: 20px;
+
+            .Stories{
+                height: 100%;
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+                flex-wrap: wrap;
+                overflow-y: scroll;
+                margin-bottom: 5px;
+                // border: 5px solid blue;
+                .card{
+                    height: 100px;
+                    width: 43%;
+                    overflow-y: scroll;
+                    .image{
+                        height: 50px;
+                        img{
+                            height: 100%;
+                        }
+                    }
+                    .name{
+                        font-size: 0.4rem;
+                    }
+                    .desc{
+                        font-size: 0.2rem;
+                    }
+                }
+
+            }
+        }
+    }
+
+    footer{
+        font-size: 0.4rem;
+    }
+}

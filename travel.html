@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VacationVoyage - Homepage</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>VacationVoyage</h1>
+    </header>
+    <nav>
+        <ul></ul>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./travel.html">DESTINATIONS</a></li>
+            <li><a href="./stories.html">TOP SPOTS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </nav>
+    <section class="TravelFrame">
+        <section class="StoriesFrame">
+            <section class="Locations">
+                <aside class="Provinces">
+                    <ul>
+                        <li onclick="FindShow('KPK')">KPK</li>
+                        <li onclick="FindShow('PUNJAB')" style="animation: ShowupR 1.2s">PUNJAB</li>
+                        <li onclick="FindShow('SINDH')" style="animation: ShowupR 1.4s">SINDH</li>
+                        <li onclick="FindShow('BALOCH')" style="animation: ShowupR 1.6s">BALOCHISTAN</li>
+                        <li onclick="FindShow('KASHMIR')" style="animation: ShowupR 1.8s">KASHMIR</li>
+                        <li onclick="FindShow('HUNZA')" style="animation: ShowupR  2s">HUNZA</li>
+                        <li onclick="FindShow('GILGIT')" style="animation: ShowupR 2.2s">GILGIT</li>
+                    </ul>
+                </aside>
+                <aside class="Locales" id="Locales">
+                    <img src="./images/location1.jpg" class="KPK" alt="">
+                    <img src="./images/location2.jpg" class="KPK" alt="">
+                    <img src="./images/location3.jpg" class="KPK" alt="">
+                    <img src="./images/location8.jpg" class="KPK" alt="">
+                    <img src="./images/location5.jpg" class="KPK" alt="">
+                    <img src="./images/location6.jpg" class="KPK" alt="">
+                    <img src="./images/location7.jpg" class="KPK" alt="">
+                    <img src="./images/location11.jpg" class="PUNJAB" alt="">
+                    <img src="./images/location10.jpg" class="PUNJAB" alt="">
+                    <img src="./images/location9.jpg" alt="" class="KASHMIR">
+                    <img src="./images/location9.webp" class="HUNZA" alt="">
+                    <img src="./images/location12.jfif" class="GILGIT" alt="">
+                    <img src="./images/location13.jpg" class="SINDH" alt="">
+                    <img src="./images/location14.jpg" class="SINDH" alt="">
+                    <img src="./images/location15.jpg" class="SINDH" alt="">
+                    <img src="./images/location8.jfif" class="BALOCH" alt="">
+                   
+                </aside>
+            </section>
+        </section>
+    </section>
+    <footer>
+        <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./travel.html">DESTINATIONS</a></li>
+            <li><a href="./stories.html">TOP SPOTS</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+</html>
